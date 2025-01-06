@@ -22,5 +22,3 @@ Por que optar por sistemas personalizados?
 	
 Transformando seu desafio em inovação!
 
-seklinsistemas@gmail.com
-(81) 99844-3055
