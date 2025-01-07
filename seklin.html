@@ -10,11 +10,11 @@
             margin: 0;
             padding: 0;
             color: #333;
-            background-color: #f4f4f4;
+            background: linear-gradient(to bottom, #f4f4f4, #2e7d32);
         }
 
         header {
-            background-color: #2e7d32;
+            background: linear-gradient(to right, #2e7d32, #4caf50);
             color: white;
             padding: 20px 0;
             text-align: center;
@@ -31,6 +31,32 @@
             margin: 0;
         }
 
+        nav {
+            background-color: #2e7d32;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            margin-bottom: 20px;
+        }
+		
+		nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            background-color: #388e3c;
+        }
+
         .container {
             max-width: 1200px;
             margin: 20px auto;
@@ -39,17 +65,67 @@
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
-        h2 {
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
             color: #2e7d32;
+            margin-bottom: 20px;
         }
 
-        ul {
-            list-style: none;
-            padding: 0;
+        .section img {
+            max-width: 100%;
+            height: auto;
+            margin: 10px 0;
+            border-radius: 8px;
         }
 
-        ul li {
-            padding: 5px 0;
+        .video-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .phone-frame {
+            width: 320px;
+            height: 568px;
+            background: #000;
+            border-radius: 30px;
+            padding: 20px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+
+        .phone-frame::before {
+            content: '';
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 5px;
+            background: #333;
+            border-radius: 10px;
+        }
+
+        .phone-frame::after {
+            content: '';
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 6px;
+            background: #333;
+            border-radius: 12px;
+        }
+
+        .phone-frame video {
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+            outline: none;
         }
 
         footer {
@@ -58,154 +134,136 @@
             background-color: #2e7d32;
             color: white;
         }
-
-        .contact {
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        .contact p {
-            margin: 5px 0;
-        }
     </style>
 </head>
+
+
+
+
+
+
+
+
 <body>
     <header>
         <img src="seklin_logo.png" alt="Seklin Sistemas">
         <h1>Bem-vindo à Seklin Sistemas</h1>
     </header>
 
+    <nav>
+        <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#apresentacao">Apresentação</a></li>
+            <li><a href="#endereco">Endereço</a></li>
+            <li><a href="#video">Vídeo Informativo</a></li>
+            <li><a href="#novidades">Novidades</a></li>
+            <li><a href="#noticias">Notícias</a></li>
+        </ul>
+    </nav>
+
     <div class="container">
-        <p>Na Seklin Sistemas, somos especialistas em desenvolver sistemas personalizados que atendem exatamente às necessidades do seu negócio. Seja para otimizar processos, integrar tecnologias ou criar plataformas exclusivas.</p>
+        <!-- Apresentação Original -->
+        <section id="apresentacao" class="section">
+		<p style="padding-left: 50px; margin-bottom: 5px;">
+        Na Seklin Sistemas, somos especialistas em desenvolver sistemas personalizados que atendem exatamente às necessidades do seu negócio
+		</p>
+		<p style="padding-left: 20px; margin-top: 0;">
+			seja para otimizar processos, integrar tecnologias ou criar plataformas exclusivas.
+		</p>
 
-        <h2>Nós oferecemos:</h2>
-        <ul>
-            <li>Soluções sob medida para os setores.</li>
-            <li>Automação e eficiência para o seu dia a dia.</li>
-            <li>Acompanhamento completo desde a ideia até a implementação.</li>
-            <li>Tecnologia de ponta alinhada às tendências do mercado.</li>
-        </ul>
 
-        <h2>Por que optar por sistemas personalizados?</h2>
-        <ul>
-            <li>Eles se adaptam 100% às suas demandas.</li>
-            <li>Crescem com o seu negócio, sendo escaláveis e flexíveis.</li>
-            <li>Garantem mais agilidade, controle e resultados.</li>
-        </ul>
+            <h2>Nós oferecemos:</h2>
+            <ul>
+                <li>Soluções sob medida para os setores.</li>
+                <li>Automação e eficiência para o seu dia a dia.</li>
+                <li>Acompanhamento completo desde a ideia até a implementação.</li>
+                <li>Tecnologia de ponta alinhada às tendências do mercado.</li>
+            </ul>
 
-        <p><strong>Transformando seu desafio em inovação!</strong></p>
-		
-		
-		
-		<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Seklin Sistemas - Qualidades</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-      background-color: #f4f4f4;
-      color: #333;
-    }
-    header {
-      background-color: #28a745;
-      color: #fff;
-      text-align: center;
-      padding: 1rem 0;
-    }
-    main {
-      padding: 20px;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-    section {
-      margin-bottom: 40px;
-      background: #fff;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-    section img {
-      max-width: 100%;
-      height: auto;
-      margin: 10px 0;
-      border-radius: 8px;
-    }
-    section h2 {
-      color: #28a745;
-      margin-bottom: 10px;
-    }
-    footer {
-      text-align: center;
-      padding: 10px;
-      background-color: #28a745;
-      color: #fff;
-      margin-top: 20px;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Seklin Sistemas</h1>
-    <p>Soluções tecnológicas desenvolvidas para você</p>
-  </header>
-  <main>
-    <section>
-      <h2>1. Simplicidade e Intuitividade</h2>
-      <p>Nossos sistemas são projetados com foco no usuário. Com interfaces amigáveis e fáceis de usar, garantimos que qualquer pessoa, independentemente do nível de experiência, consiga operar nossas soluções com facilidade.</p>
-      <img src="path/to/image1.png" alt="Interface amigável do sistema">
-    </section>
-    <section>
-      <h2>2. Alta Performance</h2>
-      <p>Utilizamos as mais recentes tecnologias para desenvolver sistemas ágeis e robustos. Isso significa que você terá uma ferramenta confiável, com tempos de resposta rápidos e capacidade para lidar com grandes volumes de dados.</p>
-      <img src="path/to/image2.png" alt="Gráficos de alta performance">
-    </section>
-    <section>
-      <h2>3. Personalização Total</h2>
-      <p>Entendemos que cada cliente tem necessidades específicas. Por isso, nossos sistemas são completamente adaptáveis para se ajustarem à realidade e aos desafios do seu negócio.</p>
-      <img src="path/to/image3.png" alt="Exemplo de personalização">
-    </section>
-    <section>
-      <h2>4. Segurança de Dados</h2>
-      <p>A proteção das suas informações é a nossa prioridade. Aplicamos as melhores práticas de segurança digital para garantir a integridade e a confidencialidade dos seus dados.</p>
-      <!-- Substituir pelo caminho da imagem relacionada -->
-      <img src="path/to/image4.png" alt="Segurança de dados">
-    </section>
-    <section>
-      <h2>5. Suporte Ágil e Eficiente</h2>
-      <p>Estamos sempre disponíveis para ajudá-lo. Nossa equipe de suporte oferece assistência técnica rápida e eficiente, garantindo o pleno funcionamento dos sistemas e a satisfação dos nossos clientes.</p>
-      <!-- Substituir pelo caminho da imagem relacionada -->
-      <img src="path/to/image5.png" alt="Suporte técnico ágil">
-    </section>
-    <section>
-      <h2>6. Integração e Escalabilidade</h2>
-      <p>Nossos sistemas podem ser integrados a outras ferramentas e plataformas, permitindo que você conecte diferentes áreas do seu negócio. Além disso, nossas soluções crescem junto com sua empresa, adaptando-se às suas demandas.</p>
-      <!-- Substituir pelo caminho da imagem relacionada -->
-      <img src="path/to/image6.png" alt="Integração com outras plataformas">
-    </section>
-  </main>
-  <footer>
-    <p></p>
-  </footer>
-</body>
-</html>
+            <h2>Por que optar por sistemas personalizados?</h2>
+            <ul>
+                <li>Eles se adaptam 100% às suas demandas.</li>
+                <li>Crescem com o seu negócio, sendo escaláveis e flexíveis.</li>
+                <li>Garantem mais agilidade, controle e resultados.</li>
+            </ul>
 
-		
-		
-		
-		
+            <p><strong>Transformando seu desafio em inovação!</strong></p>
+        </section>
+
+        <!-- Sobre -->
+        <section id="sobre" class="section">
+            <h2>Simplicidade e Intuitividade</h2>
+            <p>Nossos sistemas são projetados com foco no usuário. Com interfaces amigáveis e fáceis de usar, garantimos que qualquer pessoa, independentemente do nível de experiência, consiga operar nossas soluções com facilidade.</p>
+            <img src="path/to/image1.png" alt="Interface amigável do sistema">
+
+            <h2>Alta Performance</h2>
+            <p>Utilizamos as mais recentes tecnologias para desenvolver sistemas ágeis e robustos. Isso significa que você terá uma ferramenta confiável, com tempos de resposta rápidos e capacidade para lidar com grandes volumes de dados.</p>
+            <img src="path/to/image2.png" alt="Gráficos de alta performance">
+
+            <h2>Personalização Total</h2>
+            <p>Entendemos que cada cliente tem necessidades específicas. Por isso, nossos sistemas são completamente adaptáveis para se ajustarem à realidade e aos desafios do seu negócio.</p>
+            <img src="path/to/image3.png" alt="Exemplo de personalização">
+
+            <h2>Segurança de Dados</h2>
+            <p>A proteção das suas informações é a nossa prioridade. Aplicamos as melhores práticas de segurança digital para garantir a integridade e a confidencialidade dos seus dados.</p>
+            <img src="path/to/image4.png" alt="Segurança de dados">
+
+            <h2>Suporte Ágil e Eficiente</h2>
+            <p>Estamos sempre disponíveis para ajudá-lo. Nossa equipe de suporte oferece assistência técnica rápida e eficiente, garantindo o pleno funcionamento dos sistemas e a satisfação dos nossos clientes.</p>
+            <img src="path/to/image5.png" alt="Suporte técnico ágil">
+
+            <h2>Integração e Escalabilidade</h2>
+            <p>Nossos sistemas podem ser integrados a outras ferramentas e plataformas, permitindo que você conecte diferentes áreas do seu negócio. Além disso, nossas soluções crescem junto com sua empresa, adaptando-se às suas demandas.</p>
+            <img src="path/to/image6.png" alt="Integração com outras plataformas">
+        </section>
+
+        <!-- Vídeo Informativo -->
+        <section id="video" class="section">
+        <h2>Vídeo Informativo</h2>
+        <div class="video-container">
+        <div class="phone-frame">
+            <video controls>
+                <source src="Seklin.mp4" type="video/mp4">
+                Seu navegador não suporta a reprodução de vídeos.
+         </video>
+         </div>
+         </div>
+         </section>
+
+
+        <!-- Novidades -->
+        <section id="novidades" class="section">
+            <h2>Novidades</h2>
+            <p>Confira as últimas atualizações dos nossos produtos e serviços. Em breve lançaremos uma nova ferramenta para automação de processos empresariais!</p>
+        </section>
+
+        <!-- Notícias -->
+        <section id="noticias" class="section">
+            <h2>Notícias</h2>
+            <p>Mantenha-se informado sobre as tendências em tecnologia e inovação.</p>
+        </section>
+
+
+        <!-- Endereço -->
+        <section id="endereco" class="section">
+            <h2>Endereço</h2>
+            <p>Rua Flor de Angelim, 208 - Bairro Manoel Bezerra Lopes, Caruaru - PE.</p>
+        </section>
+
 
         <div class="contact">
             <p><strong>Contato:</strong></p>
             <p>Email: seklinsistemas@gmail.com</p>
             <p>Telefone: (81) 99844-3055</p>
         </div>
+		
+		<div class="back-to-top">
+        <a href="#top">Voltar ao topo</a>
+        </div>
+			
     </div>
+	
+	
 
     <footer>
         <p>&copy; 2025 Seklin Sistemas. Todos os direitos reservados.</p>
