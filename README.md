@@ -15,7 +15,7 @@ Nós oferecemos:
 
 Por que optar por sistemas personalizados?
 
-             Eles se adaptam 100% às suas demandas.
+            Eles se adaptam 100% às suas demandas.
             Crescem com o seu negócio, sendo escaláveis e flexíveis.
             Garantem mais agilidade, controle e resultados. 
 
