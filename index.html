@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seklin Sistemas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background: linear-gradient(to bottom, #f4f4f4, #2e7d32);
+        }
+
+        header {
+            background: linear-gradient(to right, #2e7d32, #4caf50);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header img {
+            max-width: 200px;
+            height: auto;
+            display: block;
+            margin: 0 auto 10px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+          /* Menu */
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            padding: 14px 20px;
+            transition: all 0.3s ease;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            display: block;
+        }
+
+        /* Efeito hover */
+        nav ul li a:hover {
+            background: linear-gradient(45deg, #2e7d32, #808080); /* Degradê verde e cinza */
+            color: white;
+            transform: scale(1.1); /* Aumenta o tamanho */
+            padding: 3px 7px; /* Aumenta o padding */
+        }
+
+        /* Menu Responsivo */
+        .menu-icon {
+            display: none;
+            font-size: 30px;
+            cursor: pointer;
+            color: white;
+            padding: 14px 20px;
+        }
+
+        .menu-items {
+            display: flex;
+        }
+
+        .menu-items li {
+            display: block;
+        }
+
+        @media screen and (max-width: 768px) {
+            .menu-items {
+                display: none;
+                width: 100%;
+                text-align: center;
+                background-color: #333;
+            }
+
+            .menu-items li {
+                width: 100%;
+                padding: 10px;
+            }
+
+            .menu-items.active {
+                display: block;
+            }
+
+            .menu-icon {
+                display: block;
+            }
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            color: #2e7d32;
+            margin-bottom: 20px;
+        }
+
+        .section img {
+            max-width: 100%;
+            height: auto;
+            margin: 10px 0;
+            border-radius: 8px;
+        }
+
+        .video-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .phone-frame {
+            width: 320px;
+            height: 568px;
+            background: #000;
+            border-radius: 30px;
+            padding: 20px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+
+        .phone-frame::before {
+            content: '';
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 5px;
+            background: #333;
+            border-radius: 10px;
+        }
+
+        .phone-frame::after {
+            content: '';
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 6px;
+            background: #333;
+            border-radius: 12px;
+        }
+
+        .phone-frame video {
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+            outline: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #2e7d32;
+            color: white;
+        }
+		.credito {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 5vh;
+            border: 2px solid #32CD32;
+        }
+		
+		.back-to-top a {
+		position: fixed;
+		bottom: 20px;
+		right: 20px;
+		background-color: #2e7d32;
+		color: white;
+		padding: 10px 15px;
+		border-radius: 5px;
+		text-decoration: none;
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+	}
+
+	.back-to-top a:hover {
+		background-color: #4caf50;
+	}
+	
+	.menu-items {
+    transition: max-height 0.3s ease-in-out;
+	
+		
+}
+
+  @keyframes brilho {
+        0%, 100% {
+            filter: brightness(1);
+        }
+        50% {
+            filter: brightness(1.25);
+        }
+    }
+
+    header img {
+        max-width: 200px;
+        height: auto;
+        display: block;
+        margin: 0 auto 10px;
+        animation: brilho 6s infinite;
+    }
+	
+	div a {
+        padding-left: 40px
+        margin-bottom: 0px
+        display: block;
+        margin: 0 auto 10px;
+        animation: brilho 6s infinite;
+    }
+
+    </style>
+</head>
+
+
+
+
+
+
+
+
+<body>
+    <header>
+        <img src="seklin_logo.png" alt="Seklin Sistemas">
+        <h1>Bem-vindo à Seklin Sistemas</h1>
+    </header>
+	
+	<div class="contact" style="text-align: center;">
+			   <div style="display: inline-block; text-align: center;">
+				<a href="https://wa.me/5581998443055" target="_blank" title="Fale conosco pelo WhatsApp" style="text-decoration: none; color: black;">
+					<img src="whatsapp_logo.webp" alt="WhatsApp" style="width: 70px; height: 70px; display: block; margin: 0 auto;">
+					<b style="margin: 0; padding: 5px 0;">(81) 99844-3055</b>
+				</a>
+			</div>
+		</div>
+
+    <nav>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        <ul class="menu-items">
+            <li><a href="#sobre">Sobre</a></li>
+			<li><a href="#endereco">Endereço</a></li>
+            <li><a href="#video">Vídeo Informativo</a></li>
+            <li><a href="#novidades">Novidades</a></li>
+            <li><a href="#noticias">Notícias</a></li>
+        </ul>
+    </nav>
+	<script>
+        function toggleMenu() {
+            var menu = document.querySelector('.menu-items');
+            menu.classList.toggle('active');
+        }
+    </script>
+
+    <div class="container">
+        <!-- Apresentação Original -->
+        <section id="apresentacao" class="section">
+		<p style="padding-left: 20px; margin-bottom: 5px;">
+            <b>Na Seklin Sistemas, somos especialistas em desenvolver sistemas personalizados que atendem exatamente às necessidades do seu negócio
+		</p>
+		<p style="padding-left: 20px; margin-top: 0;">
+			seja para otimizar processos, integrar tecnologias ou criar plataformas exclusivas</b>.
+		</p>
+
+
+            <h2>Nós oferecemos:</h2>
+            <ul>
+                <li>Soluções sob medida para os setores.</li>
+                <li>Automação e eficiência para o seu dia a dia.</li>
+                <li>Acompanhamento completo desde a ideia até a implementação.</li>
+                <li>Tecnologia de ponta alinhada às tendências do mercado.</li>
+            </ul>
+
+            <h2>Por que optar por sistemas personalizados?</h2>
+            <ul>
+                <li>Eles se adaptam 100% às suas demandas.</li>
+                <li>Crescem com o seu negócio, sendo escaláveis e flexíveis.</li>
+                <li>Garantem mais agilidade, controle e resultados.</li>
+            </ul>
+
+            
+        </section>
+
+        <!-- Sobre -->
+        <section id="sobre" class="section">
+            <h2>Simplicidade e Intuitividade</h2>
+            <p>Nossos sistemas são projetados com foco no usuário. Com interfaces amigáveis e fáceis de usar, garantimos que qualquer pessoa, independentemente do nível de experiência, consiga operar nossas soluções com facilidade.</p>
+            <img src="path/to/image1.png" alt="Interface amigável do sistema">
+
+            <h2>Alta Performance</h2>
+            <p>Utilizamos as mais recentes tecnologias para desenvolver sistemas ágeis e robustos. Isso significa que você terá uma ferramenta confiável, com tempos de resposta rápidos e capacidade para lidar com grandes volumes de dados.</p>
+            <img src="path/to/image2.png" alt="Gráficos de alta performance">
+
+            <h2>Personalização Total</h2>
+            <p>Entendemos que cada cliente tem necessidades específicas. Por isso, nossos sistemas são completamente adaptáveis para se ajustarem à realidade e aos desafios do seu negócio.</p>
+            <img src="path/to/image3.png" alt="Exemplo de personalização">
+
+            <h2>Segurança de Dados</h2>
+            <p>A proteção das suas informações é a nossa prioridade. Aplicamos as melhores práticas de segurança digital para garantir a integridade e a confidencialidade dos seus dados.</p>
+            <img src="path/to/image4.png" alt="Segurança de dados">
+
+            <h2>Suporte Ágil e Eficiente</h2>
+            <p>Estamos sempre disponíveis para ajudá-lo. Nossa equipe de suporte oferece assistência técnica rápida e eficiente, garantindo o pleno funcionamento dos sistemas e a satisfação dos nossos clientes.</p>
+            <img src="path/to/image5.png" alt="Suporte técnico ágil">
+
+            <h2>Integração e Escalabilidade</h2>
+            <p>Nossos sistemas podem ser integrados a outras ferramentas e plataformas, permitindo que você conecte diferentes áreas do seu negócio. Além disso, nossas soluções crescem junto com sua empresa, adaptando-se às suas demandas.</p>
+            <img src="path/to/image6.png" alt="Integração com outras plataformas">
+        </section>
+
+        <!-- Vídeo Informativo -->
+        <section id="video" class="section">
+        <h2>Vídeo Informativo</h2>
+        <div class="video-container">
+        <div class="phone-frame">
+            <video controls>
+                <source src="Seklin.mp4" type="video/mp4">
+                Seu navegador não suporta a reprodução de vídeos.
+         </video>
+         </div>
+         </div>
+         </section>
+
+
+        <!-- Novidades -->
+        <section id="novidades" class="section">
+            <h2>Novidades</h2>
+            <p>Confira as últimas atualizações dos nossos produtos e serviços. Em breve lançaremos uma nova ferramenta para automação de processos empresariais!</p>
+        </section>
+
+        <!-- Notícias -->
+        <section id="noticias" class="section">
+            <h2>Notícias</h2>
+            <p>Mantenha-se informado sobre as tendências em tecnologia e inovação.</p>
+        </section>
+
+
+        <!-- Endereço -->
+        <section id="endereco" class="section">
+            <h2>Endereço</h2>
+            <p>Rua Flor de Angelim, 208 - Bairro Manoel Bezerra Lopes, Caruaru - PE.</p>
+        </section>
+
+
+        <div id="contact"class="section">
+		<h2>Contato</h2>
+		<p>Email: seklinsistemas@gmail.com</p>
+		</div>
+
+		<div class="contact" style="text-align: center;">
+			   <div style="display: inline-block; text-align: center;">
+				<a href="https://wa.me/5581998443055" target="_blank" title="Fale conosco pelo WhatsApp" style="text-decoration: none; color: black;">
+					<img src="whatsapp_logo.webp" alt="WhatsApp" style="width: 70px; height: 70px; display: block; margin: 0 auto;">
+					<b style="margin: 0; padding: 5px 0;">(81) 99844-3055</b>
+				</a>
+			</div>
+		</div>
+
+		
+		<div class="credito">
+        <p><strong>Transformando seu desafio em inovação!</strong></p>
+        </div>
+		
+		
+		<div class="back-to-top">
+        <a href="#top">Voltar ao topo</a>
+        </div>
+			
+    </div>
+	
+	
+
+    <footer>
+        <p>&copy; 2025 Seklin Sistemas. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
