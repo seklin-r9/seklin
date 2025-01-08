@@ -208,7 +208,26 @@
 	
 	.menu-items {
     transition: max-height 0.3s ease-in-out;
+	
+		
 }
+
+  @keyframes brilho {
+        0%, 100% {
+            filter: brightness(1);
+        }
+        50% {
+            filter: brightness(1.25);
+        }
+    }
+
+    header img {
+        max-width: 200px;
+        height: auto;
+        display: block;
+        margin: 0 auto 10px;
+        animation: brilho 6s infinite;
+    }
 
     </style>
 </head>
