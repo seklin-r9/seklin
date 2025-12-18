@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-   <meta property="og:title" content="Seklin Sistemas - Desenvolvimento de Software">
-	<meta property="og:description" content="Soluções personalizadas em tecnologia para o crescimento do seu negócio.">
+   <meta property="og:title" content="Seklin Sistemas - Webpic">
+	<meta property="og:description" content="Soluções em tecnologia para confecções.">
 	<meta property="og:image" content="https://seklin-r9.github.io/seklin/seklin_logo.png">
 	<meta property="og:url" content="https://seklinsistemas.com.br">
 	<meta property="og:type" content="website">
@@ -249,6 +249,17 @@
    .seta-pulsante {
     position: fixed;
     bottom: 30px; /* Ajuste conforme necessário */
+    right: 150px; /* Ajuste conforme necessário */
+    font-size: 40px;
+    color: red;
+    animation: pulsar 1.5s infinite;
+    z-index: 1000;
+   }
+   
+    /* Estilização da seta animada */
+   .seta-pulsante2 {
+    position: fixed;
+    bottom: 30px; /* Ajuste conforme necessário */
     right: 100px; /* Ajuste conforme necessário */
     font-size: 40px;
     color: red;
@@ -261,7 +272,72 @@
     50% { transform: scale(1.2); opacity: 0.7; }
     100% { transform: scale(1); opacity: 1; }
    }
-    </style>
+    
+	
+	.revenda {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-size: 30px;
+    color: white;
+    margin-top: 5px;
+}
+
+.revenda {
+    display: flex;
+    flex-direction: column; /* força ficar embaixo */
+    align-items: center;
+    margin-top: 6px;
+}
+
+.logo-webpic {
+    height: 65px;
+    margin-top: 6px;
+}
+
+/* Container dos produtos */
+.produtos {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+/* Card de cada produto */
+.produto {
+    max-width: 420px;
+    text-align: center;
+}
+
+/* Logo DAPIC */
+.logo-dapic {
+    height: 60px !important;
+    max-height: 60px !important;
+    width: auto !important;
+    margin-bottom: 10px;
+	transform: translateY(4px); /* positivo desce | negativo sobe */
+}
+
+/* Logo VESTUAR */
+.logo-vestuar {
+    height: 60px !important;
+    max-height: 60px !important;
+    width: auto !important;
+    margin-bottom: 10px;
+	transform: translateY(4px); /* positivo desce | negativo sobe */
+}
+
+/* Texto dos produtos */
+.produto p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+	
+	</style>
+
 </head>
 
 
@@ -275,23 +351,35 @@
     <header>
 	<div class="contact" style="text-align: center;">
     <div style="display: inline-block; text-align: center;">
-        <a href="https://wa.me/5581998443055?text=Oi tudo bem! Tenho interesse nos serviços da Seklin Sistemas."
+        <a href="https://wa.me/5581998443055?text=Oi tudo bem! Tenho interesse nos serviços da Seklin Sistemas(Webpic)."
    target="_blank" 
    title="Fale conosco pelo WhatsApp" 
    style="text-decoration: none; color: white;">
         <img src="seklin_logo.png" alt="Seklin Sistemas">
-        <h1>Bem-vindo à Seklin Sistemas</h1>
+  <h1>Bem-vindo à Seklin Sistemas</h1>
+
+<div class="revenda">
+    <strong>Revenda autorizada - Canal Ceará</strong>
+   
+    <a href="https://webpic.com.br/" target="_blank" rel="noopener">
+        <img src="NavIcon@2x.png" alt="Webpic" class="logo-webpic">
+    </a>
+</div>
+
+
+
+		
     </header>
 	
 	<div class="contact" style="text-align: center;">
     <div style="display: inline-block; text-align: center;">
-        <a href="https://wa.me/5581998443055?text=Oi tudo bem! Tenho interesse nos serviços da Seklin Sistemas."
+        <a href="https://wa.me/5581998443055?text=Oi tudo bem! Tenho interesse nos serviços da Seklin Sistemas(Webpic)."
    target="_blank" 
    title="Fale conosco pelo WhatsApp" 
    style="text-decoration: none; color: black;">
    <div class="seta-pulsante">➡️</div>
     <img src="whatsapp_logo.webp" alt="WhatsApp" style="width: 70px; height: 70px; display: block; margin: 0 auto;">
-    <b style="margin: 0; padding: 5px 0;">(81) 99844-3055</b>
+    <b style="margin: 0; padding: 5px 0;">Conheça nossa solução aqui!</b>
         </a>
     </div>
     </div>
@@ -317,28 +405,48 @@
     <div class="container">
         <!-- Apresentação Original -->
         <section id="apresentacao" class="section">
-		<p style="padding-left: 20px; margin-bottom: 5px;">
-            <b>Na Seklin Sistemas, somos especialistas em desenvolver sistemas personalizados que atendem exatamente às necessidades do seu negócio
-		</p>
-		<p style="padding-left: 20px; margin-top: 0;">
-			seja para otimizar processos, integrar tecnologias ou criar plataformas exclusivas</b>.
-		</p>
+	<div class="produtos">
 
+    <div class="produto">
+        <img src="dapic.png" alt="ERP DAPIC" class="logo-dapic">
 
+        <p>
+            <strong>DAPIC</strong><br>
+            Solução completa para confecções que acompanha todo o processo
+            desde a concepção do produto até o consumidor final.
+        </p>
+    </div>
+
+    <div class="produto">
+        <img src="vestuar.png" alt="VESTUAR PDV" class="logo-vestuar">
+        <p>
+            <strong>VESTUAR PDV</strong><br>
+            Sistema de ponto de venda ágil e eficiente, desenvolvido
+            especialmente para lojas de confecção.
+        </p>
+    </div>
+
+</div>
+
+		
+		
+	
             <h2>Nós oferecemos:</h2>
             <ul>
-                <li>Soluções sob medida para os setores.</li>
+                <li>Integração completa com os principais marketplaces e plataformas de e-commerce, ampliando seus canais de venda..</li>
                 <li>Automação e eficiência para o seu dia a dia.</li>
                 <li>Acompanhamento completo desde a ideia até a implementação.</li>
                 <li>Tecnologia de ponta alinhada às tendências do mercado.</li>
             </ul>
 
-            <h2>Por que optar por sistemas personalizados?</h2>
-            <ul>
-                <li>Eles se adaptam 100% às suas demandas.</li>
-                <li>Crescem com o seu negócio, sendo escaláveis e flexíveis.</li>
-                <li>Garantem mais agilidade, controle e resultados.</li>
-            </ul>
+            <h2>Por que optar por um sistema Webpic?</h2>
+<ul>
+    <li>Implantação rápida.</li>
+	<li>Suporte ágil e capacitado.</li>
+    <li>Solução já validada no mercado de confecções.</li>
+    <li>Atualizações constantes e aderentes à legislação.</li>
+    <li>Mais agilidade, controle e segurança para o seu negócio.</li>
+</ul>
 
             
         </section>
@@ -346,28 +454,35 @@
         <!-- Sobre -->
         <section id="sobre" class="section">
             <h2>Simplicidade e Intuitividade</h2>
-            <p>Nossos sistemas são projetados com foco no usuário. Com interfaces amigáveis e fáceis de usar, garantimos que qualquer pessoa, independentemente do nível de experiência, consiga operar nossas soluções com facilidade.</p>
+            <p>Os sistemas Webpic são projetados com foco no usuário. Com interfaces amigáveis e fáceis de usar, garantimos que qualquer pessoa, independentemente do nível de experiência, consiga operar nossas soluções com facilidade.</p>
             <img src="path/to/image1.png" alt="Interface amigável do sistema">
 
             <h2>Alta Performance</h2>
-            <p>Utilizamos as mais recentes tecnologias para desenvolver sistemas ágeis e robustos. Isso significa que você terá uma ferramenta confiável, com tempos de resposta rápidos e capacidade para lidar com grandes volumes de dados.</p>
+            <p>Utilizamos as mais recentes tecnologias. Isso significa que você terá uma ferramenta confiável, com tempos de resposta rápidos e capacidade para lidar com grandes volumes de dados.</p>
             <img src="path/to/image2.png" alt="Gráficos de alta performance">
 
-            <h2>Personalização Total</h2>
-            <p>Entendemos que cada cliente tem necessidades específicas. Por isso, nossos sistemas são completamente adaptáveis para se ajustarem à realidade e aos desafios do seu negócio.</p>
+           <h2>BI Integrado</h2>
+<p>
+    O BI integrado transforma os dados do sistema em informações estratégicas,
+    disponibilizando indicadores e relatórios em tempo real para apoiar a tomada de decisões,
+    acompanhar resultados e identificar oportunidades de melhoria no seu negócio.
+</p>
+
             <img src="path/to/image3.png" alt="Exemplo de personalização">
 
             <h2>Segurança de Dados</h2>
             <p>A proteção das suas informações é a nossa prioridade. Aplicamos as melhores práticas de segurança digital para garantir a integridade e a confidencialidade dos seus dados.</p>
             <img src="path/to/image4.png" alt="Segurança de dados">
 
-            <h2>Suporte Ágil e Eficiente</h2>
-            <p>Estamos sempre disponíveis para ajudá-lo. Nossa equipe de suporte oferece assistência técnica rápida e eficiente, garantindo o pleno funcionamento dos sistemas e a satisfação dos nossos clientes.</p>
-            <img src="path/to/image5.png" alt="Suporte técnico ágil">
-
             <h2>Integração e Escalabilidade</h2>
             <p>Nossos sistemas podem ser integrados a outras ferramentas e plataformas, permitindo que você conecte diferentes áreas do seu negócio. Além disso, nossas soluções crescem junto com sua empresa, adaptando-se às suas demandas.</p>
             <img src="path/to/image6.png" alt="Integração com outras plataformas">
+			
+			
+            <h2>Suporte Ágil e Eficiente</h2>
+            <p>Estamos sempre disponíveis para ajudá-lo. Nossa equipe de suporte oferece assistência técnica rápida e eficiente, garantindo o pleno funcionamento dos sistemas e a satisfação dos nossos clientes.</p>
+            <img src="path/to/image5.png" alt="Suporte técnico ágil">
+			
         </section>
 
         <!-- Vídeo Informativo -->
@@ -387,7 +502,7 @@
         <!-- Novidades -->
         <section id="novidades" class="section">
             <h2>Novidades</h2>
-            <p>Confira as últimas atualizações dos nossos produtos e serviços. Em breve lançaremos uma nova ferramenta para automação de processos empresariais!</p>
+            <p>Confira as últimas atualizações dos nossos produtos e serviços.</p>
         </section>
 
         <!-- Notícias -->
@@ -400,7 +515,7 @@
         <!-- Endereço -->
         <section id="endereco" class="section">
             <h2>Endereço</h2>
-            <p>Rua Flor de Angelim, 208 - Bairro Manoel Bezerra Lopes, Caruaru - PE.</p>
+            <p>Rua Major Laurindo, 200 - Bairro Benfica, Fortaleza - CE.</p>
         </section>
 
 
@@ -415,7 +530,7 @@
    target="_blank" 
    title="Fale conosco pelo WhatsApp" 
    style="text-decoration: none; color: black;">
-    <div class="seta-pulsante">➡️</div>
+    <div class="seta-pulsante2">➡️</div>
     <img src="whatsapp_logo.webp" alt="WhatsApp" style="width: 70px; height: 70px; display: block; margin: 0 auto;">
     <b style="margin: 0; padding: 5px 0;">(81) 99844-3055</b>
         </a>
@@ -437,7 +552,7 @@
 	
 
     <footer>
-        <p>&copy; 2025 Seklin Sistemas. Todos os direitos reservados.</p>
+        <p>&copy; 2026 Seklin Sistemas. Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>
